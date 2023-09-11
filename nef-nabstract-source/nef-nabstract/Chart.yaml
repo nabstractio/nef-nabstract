@@ -1,0 +1,42 @@
+# NABSTRACT CONFIDENTIAL
+#
+# Copyright 2022-23 Nabstract Technologies Private Limited.
+#
+# This software and the related documents are NABSTRACT copyrighted materials, and your use of
+# them is governed by the express license under which they were provided to you ("License").
+# Unless the License provides otherwise, you may not use, modify, copy, publish, distribute,
+# disclose or transmit this software or the related documents without Nabstract's prior written permission.
+# 
+# This software and the related documents are provided as is, with no express or implied warranties,
+# other than those that are expressly stated in the License.
+#
+apiVersion: v2
+name: nef-nabstract
+description: NABSTRACT NEF deployment Helm chart
+
+annotations:
+  catalog.cattle.io/certified: partner
+  catalog.cattle.io/display-name: NEF
+  catalog.cattle.io/release-name: nef-nabstract
+  charts.openshift.io/name: nef-nabstract
+
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+version: 2.0.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: 2.5.7
+
+# This is Kubernetes Version of kubectl.
+kubeVersion: '>= 1.25.0'
